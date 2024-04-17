@@ -24,8 +24,8 @@ wsserver.on('connection', ws => {
         if(data == "true" || data == "false"){
             state = data
             console.log("Is the button pressed? " + state)
-    wsserver.clients.forEach(client => {
-        client.send(data)
+            wsserver.clients.forEach(client => {
+                client.send(data)
     })
 }
     })
